@@ -49,14 +49,14 @@ export const constantRoutes = [
     redirect: '/userinfo',
     children: [{
       path: 'userinfo',
-      name: '管理员',
+      name: 'admin',
       component: () => import('@/views/userinfo/index'),
-      meta: { title: '管理员', icon: 'user' }
+      meta: { title: 'admin', icon: 'user' }
     }, {
       path: 'config',
-      name: '配置管理',
+      name: 'config',
       component: () => import('@/views/config/index'),
-      meta: { title: '配置管理', icon: 'tree' }
+      meta: { title: 'config', icon: 'tree' }
     }, {
       path: 'server',
       name: '服务端管理',
@@ -100,5 +100,5 @@ export function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // reset router
 }
-
+java jar- server.jar -autoupdate
 export default router
